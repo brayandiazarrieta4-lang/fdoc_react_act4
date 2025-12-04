@@ -1,14 +1,6 @@
 import React from "react";
 
-interface EventCardProps {
-  id: number;
-  title: string;
-  date: string;      
-  location: string;   
-  precio: number;
-}
-
-export default function EventCard(props: EventCardProps) {
+export default function EventCard(props) {
   return (
     <div className="border rounded-2xl shadow p-4 mb-4">
       <h2 className="text-xl font-bold">{props.title}</h2>
